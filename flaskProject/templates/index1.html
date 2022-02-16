@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FlaskTest</title>
+    <link rel="stylesheet" type="text/css" href="../static/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+     <div class="overlay">     </div>
+        <div class="container">
+        </div>
+    <div class="description">
+   <h1>    Hello, Welcome To My first FlaskApp
+</h1>
+      <h1> <a href="{{ url_for('source_code') }}">Source Code</a> </h1>
+     <h1>  <a href="{{ url_for('whoami') }}">Who I am</a>  </h1>
+        <form id="random" name="random" method="get" action="/random">
+     <h1> <label >SYMBOLS FOR ALPHABET:</label></h1>
+    <label>LENGTH
+      <input type="number"  min="1"  max="100"  name="length" id="length">
+    </label>
+    <label>SPECIALS
+      <input type="number"  min="0" max="1" checked=checked name="specials" id="specials" value="0"   />
+    </label>
+    <label>DIGITS
+      <input type="number"  min="0" max="1" name="digits" id="digits" value="0"  />
+    </label>
+    <label>
+      <input type="submit"  />
+    </label>
+</form>
+    </div>
+        </header>
+</body>
+</html>
+
